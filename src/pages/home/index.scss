@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #221b38;
+
+    .div-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 20em;
+        width: 20em;
+        background-color: #2a2344;
+        border-radius: 20px;
+
+        hr{
+            width: 25%;
+            color: #ccbd9e;
+        }
+
+        .div-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10em;
+            width: 100%;
+
+            a {
+                font-size: 30px;
+                text-decoration: none;
+                color:#ccbd9e;
+            }
+        }
+
+        .div-link:hover {
+            background-color: #322758;
+            border-radius: 20px 20px 20px 20px;
+        }
+    }
+}

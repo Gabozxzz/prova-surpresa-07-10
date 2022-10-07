@@ -9,11 +9,17 @@ import { useState, useEffect } from 'react'
         const [total, setTotal] = useState(0);
 
         function calcular() {
-            let total = qtdpeq * 13.5 + qtdmed * 15 + qtdgra * 17;
-            let desconto = total * desc/100;
+                let total = qtdpeq * 13.5 + qtdmed * 15 + qtdgra * 17;
+                let desconto = total * desc/100;
+                let final = total - desconto
+                setTotal(final)
 
-            let final = total - desconto
-            setTotal(final)
+                if (qtdpeq < 0 || qtdmed < 0 || qtdgra < 0 || desc < 0) {
+                    setTotal('Valor inválido')
+                }
+                else if(desc == 100){
+                    setTotal('Free Sale')
+                }
         }
 
         useEffect(() => {
@@ -36,7 +42,9 @@ import { useState, useEffect } from 'react'
                 <div>
                     Desconto: <input type="number" value={desc} onChange={e => setDesc(Number(e.target.value))}/>
                 </div>
-                <div>Total é: {total}</div>
+                <div>
+                    Total: {total}
+                </div>
             </div>
             
         </main>

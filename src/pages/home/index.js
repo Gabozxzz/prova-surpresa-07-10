@@ -1,12 +1,22 @@
-import { Link }  from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './index.scss';
 
 function Index() {
   return (
     <div className="home">
-      <Link to= "/acai"> Açai </Link>
-      <Link to="/signo"> Signo </Link>
-      <Link to="/sorveteria"> Sorveteria </Link>
+      <div className="div-links">
+        <div className="div-link">
+          <Link to="/acai"> Açai </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/signo"> Signo </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/sorveteria"> Sorveteria </Link>
+        </div>
+      </div>
     </div>
   );
 }

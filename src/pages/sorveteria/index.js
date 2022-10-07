@@ -2,7 +2,7 @@ import './index.scss'
 import { useState, useEffect } from 'react'
 
 export default function Sorveteria() {
-    const [gramas, setGramas] = useState()
+    const [gramas, setGramas] = useState(0)
     const [resultado, setResultado] = useState('')
 
 
@@ -11,12 +11,16 @@ export default function Sorveteria() {
 
         if(gramas >= 1000) {
             total = (gramas / 100) * 3
+            setResultado(total)
         }
-        else (
+        else if (gramas > 0) {
             total = (gramas / 100) * 3.50
-        )
-        setResultado(total);
+            setResultado(total)
         }
+        else ( 
+            setResultado(total = 'Peso inválido')
+        )
+    }
     
     useEffect(() => {
         calcular()
@@ -29,9 +33,7 @@ export default function Sorveteria() {
                 <div>
                     Gramas: <input type="number" value={gramas} onChange={e => setGramas(e.target.value)} />
                 </div>
-                <div>
-                   Serão R${resultado}
-                </div>
+                <div> {resultado ? `Total: ${resultado}` : 'peso inválido'} </div>
             </div>
         </main>
     )
