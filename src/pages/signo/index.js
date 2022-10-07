@@ -1,0 +1,34 @@
+import './index.scss'
+import { useState, useEffect } from 'react'
+
+export default function Signo() {
+    const [mes, setMes] = useState('')
+    const [dia, setDia] = useState()
+    const [resultado, setResultado] = useState('')
+
+    function calcular () {
+        if (mes == 'setembro' && dia >= 23 || mes == 'outubro' && dia <= 22) {
+            setResultado('Seu signo é libra')
+        }
+        else {
+            setResultado('Seu signo não é libra')
+        }
+    }
+
+    useEffect(() => {
+        calcular()
+    }, [mes, dia])
+
+    return (
+        <main>
+            <h1> Signo </h1>
+            <div>
+                Mês: <input type="text" value={mes} onChange={e => setMes(e.target.value)} />
+            </div>
+            <div>
+                Dia: <input type="number" value={dia} onChange={e => setDia(e.target.value)} />
+            </div>
+            {resultado}            
+        </main>
+    )
+}
