@@ -1,4 +1,5 @@
 import './index.scss'
+import '../../common/index.scss'
 import { useState, useEffect } from 'react'
 
 export default function Sorveteria() {
@@ -27,9 +28,9 @@ export default function Sorveteria() {
     }, [gramas])
 
     return (
-        <main>
-            <h1> Sorveteria </h1>
-            <div>
+        <main className='func-sorvete'>
+            <div className='conteudo'>
+                <h1> Sorveteria </h1>
                 <div>
                     Gramas: <input type="number" value={gramas} onChange={e => setGramas(e.target.value)} />
                 </div>

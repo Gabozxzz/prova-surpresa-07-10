@@ -1,0 +1,28 @@
+.func-sorvete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../../../public/assets/images/sorvete.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 55%;
+        width: 25%;
+        background-color: #0242909d;
+        border-radius: 20px;
+        color: beige;
+
+        input {
+            background-color: #7f6eff;
+            outline: none;
+            border: none;
+            color: beige;
+        }
+    }
+}

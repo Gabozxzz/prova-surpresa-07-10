@@ -1,4 +1,5 @@
 import './index.scss'
+import '../../common/index.scss'
 import { useState, useEffect } from 'react'
 
     export default function Acai() {
@@ -17,7 +18,7 @@ import { useState, useEffect } from 'react'
                 if (qtdpeq < 0 || qtdmed < 0 || qtdgra < 0 || desc < 0) {
                     setTotal('Valor inválido')
                 }
-                else if(desc == 100){
+                else if(desc === 100){
                     setTotal('Free Sale')
                 }
         }
@@ -28,18 +29,18 @@ import { useState, useEffect } from 'react'
 
     return (
         <main className='func-acai'>
-            <h1> Açaí </h1>
-            <div>
-                <div>
+            <div className='conteudo'>
+                <h1> Açaí </h1>
+                <div className='individual'>
                     Quantidade Pequenos: <input type="number" value={qtdpeq} onChange={e => setQtdpeq(e.target.value)} />
                 </div>
-                <div>
+                <div className='individual'>
                     Quantidade Médios: <input type="number" value={qtdmed} onChange={e => setQtdmed(e.target.value)} />
                 </div>
-                <div>
+                <div className='individual'>
                     Quantidade Grandes: <input type="number" value={qtdgra} onChange={e => setQtdgra(e.target.value)} />
                 </div>
-                <div>
+                <div className='individual'>
                     Desconto: <input type="number" value={desc} onChange={e => setDesc(Number(e.target.value))}/>
                 </div>
                 <div>

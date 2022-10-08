@@ -1,4 +1,5 @@
 import './index.scss'
+import '../../common/index.scss'
 import { useState, useEffect } from 'react'
 
 export default function Signo() {
@@ -20,15 +21,17 @@ export default function Signo() {
     }, [mes, dia])
 
     return (
-        <main>
-            <h1> Signo </h1>
-            <div>
-                Mês: <input type="text" value={mes} onChange={e => setMes(e.target.value)} />
+        <main className='func-signo'>
+            <div className='conteudo'>
+                <h1> Signo </h1>
+                <div>
+                    Mês: <input type="text" value={mes} onChange={e => setMes(e.target.value)} />
+                </div>
+                <div>
+                    Dia: <input type="number" value={dia} onChange={e => setDia(e.target.value)} />
+                </div>
+                {resultado}            
             </div>
-            <div>
-                Dia: <input type="number" value={dia} onChange={e => setDia(e.target.value)} />
-            </div>
-            {resultado}            
         </main>
     )
 }
