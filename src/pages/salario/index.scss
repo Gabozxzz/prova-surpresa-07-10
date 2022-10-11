@@ -1,11 +1,9 @@
-.func-acai {
+.func-salario {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('../../../public/assets/images/acai.jfif');
-    background-repeat: no-repeat;
-    background-size: 200vh;
+    background-image: url('../../../public/assets/images/dolar.jfif');
 
     .conteudo {
         display: flex;
@@ -14,18 +12,18 @@
         justify-content: space-evenly;
         height: 40%;
         width: 25%;
-        background-color: #6d0066;
+        background-color: #008fbb;
         border-radius: 20px;
         color: beige;
-
+        
         .individual {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-
+            
             input {
-                background-color: #b700b7;
+                background-color: #00b0c7;
                 outline: none;
                 border: none;
                 color: beige;

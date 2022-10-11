@@ -5,14 +5,14 @@
     height: 100vh;
     background: url('../../../public/assets/images/constelacao.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 200vh;
 
     .conteudo {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 55%;
+        height: 40%;
         width: 25%;
         background-color: #0600569d;
         border-radius: 20px;

@@ -17,6 +17,18 @@ function Index() {
         <div className="div-link">
           <Link to="/sorveteria"> Sorveteria </Link>
         </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/salario"> Salário </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/abastecimento"> Abastecimento </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/temperatura"> Temperatura </Link>
+        </div>
       </div>
     </div>
   );

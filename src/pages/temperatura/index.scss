@@ -1,11 +1,8 @@
-.func-acai {
+.func-temp {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('../../../public/assets/images/acai.jfif');
-    background-repeat: no-repeat;
-    background-size: 200vh;
 
     .conteudo {
         display: flex;
@@ -13,7 +10,7 @@
         align-items: center;
         justify-content: space-evenly;
         height: 40%;
-        width: 25%;
+        width: 30%;
         background-color: #6d0066;
         border-radius: 20px;
         color: beige;
