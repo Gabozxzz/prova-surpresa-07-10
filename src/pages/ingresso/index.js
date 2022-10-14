@@ -36,10 +36,10 @@ export default function Ingresso(){
         <main className='func-abas'>
         <div className='conteudo'>
             <div className='individual'>
-                Inteiras: <input type='number' value={inteiras} onChange={e => setInteiras(Number(e.target.value))} />
+                Inteiras: <input type='number' min={0}  value={inteiras} onChange={e => setInteiras(Number(e.target.value))} />
             </div>
             <div className='individual'>
-                Meias: <input type='number' value={meias} onChange={e => setMeias(Number(e.target.value))} />
+                Meias: <input type='number' min={0}  value={meias} onChange={e => setMeias(Number(e.target.value))} />
             </div>
             <div className='individual'>
                 Dia da Semana: <input type='text' value={diaSemana} onChange={e => setDiaSemana(e.target.value)} />

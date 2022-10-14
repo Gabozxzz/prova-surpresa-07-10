@@ -3,16 +3,23 @@ import '../../common/index.scss'
 import { useState, useEffect } from 'react'
 
 export default function Abastecimento() {
-    const [capacidade, setCapacidade] = useState (0);
-    const [consumo, setConsumo] = useState (0);
-    const [distancia, setDistancia] = useState (0);
+    const [capacidade, setCapacidade] = useState ('');
+    const [consumo, setConsumo] = useState ('');
+    const [distancia, setDistancia] = useState ('');
     const [paradas, setParadas] = useState(0);
 
     function calcular() {
-        let cons = distancia / consumo;
-        let paradas = cons / capacidade;
-        setParadas = Math.ceil(paradas)
+        let litros = distancia / consumo;
+        let p = litros / capacidade;
+        setParadas(Math.ceil(p));
+
     }
+
+    useEffect( () => {
+        calcular()
+    }, [capacidade, consumo, distancia, paradas])
+
+    
 
     return (
         <main className='func-abas'>
