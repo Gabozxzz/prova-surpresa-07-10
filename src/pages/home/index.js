@@ -29,6 +29,14 @@ function Index() {
         <div className="div-link">
           <Link to="/temperatura"> Temperatura </Link>
         </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/orcamento"> Orcamento </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/ingresso"> Ingresso </Link>
+        </div>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export default function Abastecimento() {
     function calcular() {
         let cons = distancia / consumo;
         let paradas = cons / capacidade;
-        paradas = Math.ceil(paradas)
+        setParadas = Math.ceil(paradas)
     }
 
     return (
