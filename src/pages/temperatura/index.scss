@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+    background-image: url(../../../public/assets/images/termometro.jpg);
+    background-repeat: no-repeat;
+    background-size: 86em;
     .conteudo {
         display: flex;
         flex-direction: column;
@@ -11,9 +13,10 @@
         justify-content: space-evenly;
         height: 40%;
         width: 30%;
-        background-color: #6d0066;
+        background-color: #6d0000;
         border-radius: 20px;
         color: beige;
+
 
         .individual {
             display: flex;
@@ -22,7 +25,7 @@
             width: 100%;
 
             input {
-                background-color: #b700b7;
+                background-color: #5e0000;
                 outline: none;
                 border: none;
                 color: beige;
