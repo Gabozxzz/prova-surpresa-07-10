@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image:url(../../../public/assets/images/bilhete-de-circo-de-bilheteria-roxo_611054-646.webp) ;
 
     .conteudo {
         display: flex;
@@ -11,9 +12,11 @@
         justify-content: space-evenly;
         height: 40%;
         width: 25%;
-        background-color: #6d0066;
+        background-color: #b9a701;
         border-radius: 20px;
-        color: beige;
+        color: #910000;
+        margin-top: 24em;
+        margin-left: 3em;
 
         .individual {
             display: flex;
@@ -22,7 +25,7 @@
             width: 100%;
 
             input {
-                background-color: #b700b7;
+                background-color: #910000;
                 outline: none;
                 border: none;
                 color: beige;

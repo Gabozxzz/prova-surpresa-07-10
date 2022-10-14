@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url(../../../public/assets/images/posto.jpg);
 
     .conteudo {
         display: flex;
@@ -11,9 +12,9 @@
         justify-content: space-evenly;
         height: 40%;
         width: 25%;
-        background-color: #6d0066;
+        background-color: #dfd9d9;
         border-radius: 20px;
-        color: beige;
+        color: rgb(122, 0, 0);
 
         .individual {
             display: flex;
@@ -22,7 +23,7 @@
             width: 100%;
 
             input {
-                background-color: #b700b7;
+                background-color: #949494;
                 outline: none;
                 border: none;
                 color: beige;
