@@ -12,16 +12,12 @@ export default function Abastecimento() {
         let litros = distancia / consumo;
         let p = litros / capacidade;
         setParadas(Math.ceil(p));
-
     }
-
     useEffect( () => {
         calcular()
     }, [capacidade, consumo, distancia, paradas])
-
     
-
-    return (
+ return (
         <main className='func-abas'>
             <div className='conteudo'>
                 <div className='individual'>

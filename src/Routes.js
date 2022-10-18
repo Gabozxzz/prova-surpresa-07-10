@@ -9,6 +9,9 @@ import Abastecimento from './pages/abastecimento/index.js'
 import Temperatura from './pages/temperatura/index.js'
 import Orcamento from './pages/orcamento/index.js'
 import Ingresso from './pages/ingresso/index.js'
+import InicioFim from './pages/iniciofim/index.js'
+import Linha from './pages/linha/index.js'
+import Retangulo from './pages/retangulo/index.js'
 
 export default function Index(){
     return(
@@ -23,6 +26,9 @@ export default function Index(){
                 <Route path='/temperatura' element={<Temperatura />} />
                 <Route path='/orcamento' element={<Orcamento />} />
                 <Route path='/ingresso' element={<Ingresso />} />
+                <Route path='/iniciofim' element={<InicioFim />} />
+                <Route path='/linhatam' element={<Linha />} />
+                <Route path='/retangulo' element={<Retangulo />} />
             </Routes>
         </BrowserRouter>
     ) 

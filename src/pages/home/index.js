@@ -37,6 +37,18 @@ function Index() {
         <div className="div-link">
           <Link to="/ingresso"> Ingresso </Link>
         </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/iniciofim"> Início-Fim </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/linhatam"> Linha </Link>
+        </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/retangulo"> Retângulo </Link>
+        </div>
       </div>
     </div>
   );
