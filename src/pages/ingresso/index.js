@@ -34,23 +34,23 @@ export default function Ingresso(){
 
     return(
         <main className='func-abas'>
-        <div className='conteudo'>
-            <div className='individual'>
-                Inteiras: <input type='number' min={0}  value={inteiras} onChange={e => setInteiras(Number(e.target.value))} />
+            <div className='conteudo'>
+                <div className='individual'>
+                    Inteiras: <input type='number' min={0}  value={inteiras} onChange={e => setInteiras(Number(e.target.value))} />
+                </div>
+                <div className='individual'>
+                    Meias: <input type='number' min={0}  value={meias} onChange={e => setMeias(Number(e.target.value))} />
+                </div>
+                <div className='individual'>
+                    Dia da Semana: <input type='text' value={diaSemana} onChange={e => setDiaSemana(e.target.value)} />
+                </div>
+                <div className='individual'>
+                    Nacional: <input type='checkbox' value={nacional} onChange={e => setNacional(e.target.checked)} />
+                </div>
+                <div className='individual'>
+                    Total: {resultado}
+                </div>
             </div>
-            <div className='individual'>
-                Meias: <input type='number' min={0}  value={meias} onChange={e => setMeias(Number(e.target.value))} />
-            </div>
-            <div className='individual'>
-                Dia da Semana: <input type='text' value={diaSemana} onChange={e => setDiaSemana(e.target.value)} />
-            </div>
-            <div className='individual'>
-                Nacional: <input type='checkbox' value={nacional} onChange={e => setNacional(e.target.checked)} />
-            </div>
-            <div className='individual'>
-                Total: {resultado}
-            </div>
-        </div>
-    </main>
+        </main>
     )
 }

@@ -9,7 +9,6 @@ export default function Orcamento(){
     const [gastos, setGastos] = useState(0);
     const [atencao, setAtencao] = useState("");
 
-
     function calcular(){
         let aviso = ""
 

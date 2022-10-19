@@ -1,0 +1,12 @@
+.pag-cafe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .div-principal {    
+        height: 50%;
+        width: 30%;
+        background-color: aqua;
+    }
+}

@@ -12,6 +12,7 @@ import Ingresso from './pages/ingresso/index.js'
 import InicioFim from './pages/iniciofim/index.js'
 import Linha from './pages/linha/index.js'
 import Retangulo from './pages/retangulo/index.js'
+import Cafe from './pages/cafe/index.js'
 
 export default function Index(){
     return(
@@ -29,6 +30,7 @@ export default function Index(){
                 <Route path='/iniciofim' element={<InicioFim />} />
                 <Route path='/linhatam' element={<Linha />} />
                 <Route path='/retangulo' element={<Retangulo />} />
+                <Route path='/cafe' element={<Cafe />} />
             </Routes>
         </BrowserRouter>
     ) 
