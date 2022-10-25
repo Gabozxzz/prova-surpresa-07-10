@@ -57,6 +57,10 @@ function Index() {
         <div className="div-link">
           <Link to="/juros"> Juros </Link>
         </div>
+        <hr/>
+        <div className="div-link">
+          <Link to="/notas"> Notas </Link>
+        </div>
       </div>
     </div>
   );
